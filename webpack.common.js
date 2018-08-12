@@ -14,6 +14,10 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
@@ -26,5 +30,9 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
+  },
+  devtool: "cheap-module-eval-source-map",
+  devServer: {
+    historyApiFallback: true
   }
 };
