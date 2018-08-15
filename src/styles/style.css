@@ -1,3 +1,10 @@
 * {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
 }
